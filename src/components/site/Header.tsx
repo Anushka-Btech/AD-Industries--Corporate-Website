@@ -50,16 +50,16 @@ export function Header() {
             : "border-transparent bg-transparent py-3"
         }`}
       >
-        {/* Brand Logo */}
+        {/* Company Logo */}
         <Link
           to="/"
           aria-label="A.D. Industries home"
-          className="flex min-w-0 items-center gap-2 pl-2"
+          className="flex min-w-0 items-center pl-2"
         >
           <img
-            src="/AD_Industries_Logo.svg"
+            src="/AD-Industries-Logo.png"
             alt="A.D. Industries"
-            className="h-10 w-auto max-w-[150px] object-contain transition-transform duration-300 hover:scale-105 sm:h-12 sm:max-w-[180px]"
+            className="h-12 w-auto max-w-[180px] object-contain transition-transform duration-300 hover:scale-105 sm:h-14 sm:max-w-[210px]"
           />
         </Link>
 
@@ -109,7 +109,9 @@ export function Header() {
             type="button"
             onClick={() => setOpen((value) => !value)}
             className="grid h-10 w-10 place-items-center rounded-full border border-foreground/10 bg-foreground/5 transition hover:bg-foreground/10 lg:hidden"
-            aria-label={open ? "Close navigation menu" : "Open navigation menu"}
+            aria-label={
+              open ? "Close navigation menu" : "Open navigation menu"
+            }
             aria-expanded={open}
             aria-controls="mobile-navigation"
           >
