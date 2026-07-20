@@ -42,8 +42,8 @@ const CONTACT_DETAILS = [
   {
     Icon: Phone,
     title: "Phone",
-    description: "+91 98765 43210",
-    href: "tel:+919876543210",
+    description: "+91 7240027900",
+    href: "tel:+917240027900",
   },
   {
     Icon: Mail,
@@ -60,7 +60,7 @@ const CONTACT_DETAILS = [
     Icon: MessageSquare,
     title: "WhatsApp",
     description: "Chat with our team any time",
-    href: "https://wa.me/919876543210",
+    href: "https://wa.me/917240027900",
   },
 ] as const;
 

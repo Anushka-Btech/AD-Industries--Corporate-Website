@@ -14,7 +14,7 @@ export function FloatingActions() {
   return (
     <div className="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-3">
       <a
-        href="https://wa.me/919876543210"
+        href="https://wa.me/917240027900"
         target="_blank"
         rel="noreferrer"
         aria-label="Chat on WhatsApp"
@@ -25,7 +25,7 @@ export function FloatingActions() {
         </svg>
       </a>
       <a
-        href="tel:+919876543210"
+        href="tel:+917240027900"
         aria-label="Call us"
         className="grid h-14 w-14 place-items-center rounded-full bg-gradient-to-br from-brand to-brand-glow text-black shadow-glow transition hover:scale-105"
       >
