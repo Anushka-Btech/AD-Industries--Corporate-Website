@@ -54,20 +54,21 @@ export function Header() {
         <Link
           to="/"
           aria-label="A.D. Industries home"
-          className="flex min-w-0 items-center pl-2"
+          className="flex min-w-0 items-center gap-2 pl-2"
         >
           <img
-            src="/AD-Industries-Logo.png"
-            alt="A.D. Industries"
-            className="h-12 w-auto max-w-[180px] object-contain transition-transform duration-300 hover:scale-105 sm:h-14 sm:max-w-[210px]"
+            src="/Gemini_Generated_Image_x4mc3xx4mc3xx4mc.png"
+            alt="A.D. Industries logo"
+            className="h-10 w-auto max-w-[110px] object-contain transition-transform duration-300 hover:scale-105 sm:h-12 sm:max-w-[135px]"
           />
+
+          <span className="whitespace-nowrap font-display text-sm font-bold tracking-tight sm:text-base">
+            A.D. Industries
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav
-          aria-label="Main navigation"
-          className="hidden items-center gap-1 lg:flex"
-        >
+        <nav aria-label="Main navigation" className="hidden items-center gap-1 lg:flex">
           {NAV.map((item) => {
             const active = pathname === item.to;
 
@@ -77,9 +78,7 @@ export function Header() {
                 to={item.to}
                 aria-current={active ? "page" : undefined}
                 className={`relative rounded-full px-4 py-2 text-sm font-medium transition ${
-                  active
-                    ? "text-foreground"
-                    : "text-muted-foreground hover:text-foreground"
+                  active ? "text-foreground" : "text-muted-foreground hover:text-foreground"
                 }`}
               >
                 {active && (
@@ -109,9 +108,7 @@ export function Header() {
             type="button"
             onClick={() => setOpen((value) => !value)}
             className="grid h-10 w-10 place-items-center rounded-full border border-foreground/10 bg-foreground/5 transition hover:bg-foreground/10 lg:hidden"
-            aria-label={
-              open ? "Close navigation menu" : "Open navigation menu"
-            }
+            aria-label={open ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={open}
             aria-controls="mobile-navigation"
           >
@@ -126,10 +123,7 @@ export function Header() {
 
       {/* Mobile Navigation */}
       {open && (
-        <div
-          id="mobile-navigation"
-          className="container-x mt-2 lg:hidden"
-        >
+        <div id="mobile-navigation" className="container-x mt-2 lg:hidden">
           <div className="glass-strong rounded-3xl p-3">
             <nav aria-label="Mobile navigation" className="grid gap-1">
               {NAV.map((item) => {
